@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import NewTodoForm from './NewTodoForm'
+import { getTodos, getTodosLoading } from './selectors'
 import { completeTodoRequest, loadTodos, removeTodoRequest } from './thunks'
 import TodoItem from './TodoItem'
 import './TodoList.css'
@@ -24,8 +25,8 @@ const TodoList = ({ todos = [], isLoading, onRemoveClicked, onCompleteClicked, s
 }
 
 const mapStateToProps = (state) => ({
-    todos: state.todos,
-    isLoading: state.isLoading,
+    todos: getTodos(state),
+    isLoading: getTodosLoading(state),
 })
 
 const mapDispatchToProps = dispatch => ({

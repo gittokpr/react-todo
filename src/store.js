@@ -2,13 +2,12 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import storage from 'redux-persist/lib/storage';
 import persistReducer from 'redux-persist/es/persistReducer';
 import autoMergeLevel2 from 'redux-persist/es/stateReconciler/autoMergeLevel2';
-import { todos, isLoading } from './todos/reducers';
+import { todos } from './todos/reducers';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
 const reducers = {
     todos,
-    isLoading,
 };
 
 const persistConfig = {

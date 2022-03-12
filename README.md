@@ -53,3 +53,7 @@ npm install --save-dev @babel/plugin-transform-runtime
            |                                             |
            |                (read only)                  |
             ---------------------------------------------
+
+## selectors
+
+selectors give us a place to put logic for combining, filtering, transforming stored data.
