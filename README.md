@@ -60,5 +60,6 @@ selectors give us a place to put logic for combining, filtering, transforming st
 
 ### reselect
 
+npm install reselect.
 to be used when one selector needs to call another selector.
-npm install reselect
+createSelector make use of memoization (used in dp top down)
