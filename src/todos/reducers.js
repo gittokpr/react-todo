@@ -1,4 +1,4 @@
-import { COMPLETE_TODO, CREATE_TODO, REMOVE_TODO } from './actions';
+import { COMPLETE_TODO, CREATE_TODO, LOAD_TODOS_COMPLETED, LOAD_TODOS_FAILURE, LOAD_TODOS_IN_PROGRESS, REMOVE_TODO } from './actions';
 
 export const todos = (state = [], action) => {
 
@@ -27,6 +27,20 @@ export const todos = (state = [], action) => {
                     return todo;
                 });
         }
+        default:
+            return state;
+    }
+}
+
+export const isLoading = (state = false, action) => {
+    const { type } = action;
+
+    switch (type) {
+        case LOAD_TODOS_IN_PROGRESS:
+            return true;
+        case LOAD_TODOS_COMPLETED:
+        case LOAD_TODOS_FAILURE:
+            return false;
         default:
             return state;
     }
