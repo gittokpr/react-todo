@@ -18,3 +18,19 @@ export const completeTodo = text => ({
     type: COMPLETE_TODO,
     payload: { text }
 })
+
+export const LOAD_TODOS_IN_PROGRESS = 'LOAD_TODOS_IN_PROGRESS';
+export const loadTodosInProgress = () => ({
+    type: LOAD_TODOS_IN_PROGRESS,
+})
+
+export const LOAD_TODOS_COMPLETED = 'LOAD_TODOS_COMPLETED';
+export const loadTodosCompleted = todos => ({
+    type: LOAD_TODOS_COMPLETED,
+    payload: { todos },
+})
+
+export const LOAD_TODOS_FAILURE = 'LOAD_TODOS_FAILURE';
+export const loadTodosFailure = () => ({
+    type: LOAD_TODOS_FAILURE,
+})
