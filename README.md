@@ -57,3 +57,8 @@ npm install --save-dev @babel/plugin-transform-runtime
 ## selectors
 
 selectors give us a place to put logic for combining, filtering, transforming stored data.
+
+### reselect
+
+to be used when one selector needs to call another selector.
+npm install reselect
