@@ -37,3 +37,19 @@ Components can only interact with the state by triggering Redux actions.
            |                                             |
            |                (read only)                  |
             ---------------------------------------------
+
+## redux thunk
+
+npm install redux-thunk redux-devtools-extension @babel/runtime
+
+npm install --save-dev @babel/plugin-transform-runtime
+
+            --------------> ui triggers action ----------------------------
+           |                                             | (reducer)       |
+           |                                             |            load data,etc(async)
+           |                                             v                 |
+    components see updated state                state is updated ----------
+           ^                                             |
+           |                                             |
+           |                (read only)                  |
+            ---------------------------------------------

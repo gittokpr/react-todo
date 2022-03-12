@@ -22,7 +22,7 @@ export const todos = (state = [], action) => {
             return state
                 .map(todo => {
                     if (todo.text === text) {
-                        todo.isCompleted = true
+                        return { ...todo, isCompleted: true }
                     }
                     return todo;
                 });
