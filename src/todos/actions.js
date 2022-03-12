@@ -1,22 +1,22 @@
 //action type
 export const CREATE_TODO = 'CREATE_TODO';
 //action creator
-export const createTodo = text => ({
+export const createTodo = todo => ({
     type: CREATE_TODO,
-    payload: { text }
+    payload: { todo }
 })
 //action type
 export const REMOVE_TODO = 'REMOVE_TODO';
 //action creator
-export const removeTodo = text => ({
+export const removeTodo = todo => ({
     type: REMOVE_TODO,
-    payload: { text }
+    payload: { todo }
 })
 
 export const COMPLETE_TODO = 'COMPLETE_TODO';
-export const completeTodo = text => ({
+export const completeTodo = todo => ({
     type: COMPLETE_TODO,
-    payload: { text }
+    payload: { todo }
 })
 
 export const LOAD_TODOS_IN_PROGRESS = 'LOAD_TODOS_IN_PROGRESS';

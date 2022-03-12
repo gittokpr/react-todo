@@ -8,12 +8,12 @@ function TodoItem({ todo, onRemoveClicked, onCompleteClicked }) {
             <div className="buttons-container">
                 {todo.isCompleted ? null :
                     <button
-                        onClick={() => onCompleteClicked(todo.text)}
+                        onClick={() => onCompleteClicked(todo.id)}
                         className="completed-button">Mark As Completed
                     </button>
                 }
                 <button
-                    onClick={() => onRemoveClicked(todo.text)}
+                    onClick={() => onRemoveClicked(todo.id)}
                     className="remove-button">Remove</button>
             </div>
         </div>
