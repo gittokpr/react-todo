@@ -64,7 +64,12 @@ npm install reselect.
 to be used when one selector needs to call another selector.
 createSelector make use of memoization (used in dp top down)
 
-### styled components
+## styled components
 
 npm install styled-components
 Allows us to define styles inside our js files.
+
+## Testing
+
+npm install --save-dev mocha chai
+npm install --save-dev @babel/register
