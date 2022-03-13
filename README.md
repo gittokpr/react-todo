@@ -73,3 +73,7 @@ Allows us to define styles inside our js files.
 
 npm install --save-dev mocha chai
 npm install --save-dev @babel/register
+
+### thunk
+
+npm install --save-dev sinon node-fetch@2 fetch-mock
